@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Task Analyzer</h1>
+        
+        <div class="main-content">
+            <div class="input-section">
+                <h2>Input Tasks</h2>
+                <textarea id="taskInput" placeholder='[
+  {
+    "title": "Complete project report",
+    "due_date": "2024-01-15",
+    "importance": 8,
+    "estimated_hours": 4
+  },
+  {
+    "title": "Review code changes",
+    "due_date": "2024-01-12",
+    "importance": 6,
+    "estimated_hours": 1
+  }
+]'></textarea>
+                <div class="controls">
+                    <button id="analyzeBtn">Analyze Tasks</button>
+                    <button id="suggestBtn">Get Top 3 Suggestions</button>
+                </div>
+            </div>
+            
+            <div class="results-section">
+                <h2>Results</h2>
+                <div id="results"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
